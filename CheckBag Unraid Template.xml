@@ -21,9 +21,9 @@
   <DonateText/>
   <DonateLink/>
   <Requires>Valkey v18</Requires>
-  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="false" Mask="false"/>
-  <Config Name="Valkey IP" Target="CACHE_ADDRESS" Default="" Mode="" Description="Does not include port or protocol" Type="Variable" Display="always-hide" Required="true" Mask="false"/>
-  <Config Name="Valkey Port" Target="CACHE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="false" Mask="false">8769</Config>
+  <Config Name="Valkey IP" Target="CACHE_ADDRESS" Default="" Mode="" Description="Does not include port or protocol" Type="Variable" Display="always-hide" Required="true" Mask="false">172.17.0.4</Config>
+  <Config Name="Valkey Port" Target="CACHE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">6379</Config>
   <Config Name="Valkey Password" Target="CACHE_PASSWORD" Default="" Mode="" Description="If Valkey was setup with --requirepass" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="CheckBag Data" Target="/home/appuser/CheckBag" Default="/mnt/user/appdata/CheckBag" Mode="rw" Description="Settings and user data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/CheckBag</Config>
   <Config Name="Cache ID Length" Target="CACHE_ID_LENGTH" Default="15" Mode="" Description="When an identifier is created (ex. JWT), how long the ID should be." Type="Variable" Display="advanced-hide" Required="true" Mask="false">15</Config>
