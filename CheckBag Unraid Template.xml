@@ -4,13 +4,6 @@
   <Repository>ghcr.io/benjaminroberts01375/checkbag:latest</Repository>
   <Registry>https://github.com/benjaminRoberts01375/CheckBag/pkgs/container/checkbag</Registry>
   <Network>bridge</Network>
-    <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/CheckBag/data</HostDir>
-      <ContainerDir>/home/appuser/CheckBag</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    </Data>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -24,6 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1756922868</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>Valkey v18</Requires>
@@ -31,6 +25,7 @@
   <Config Name="Valkey IP" Target="CACHE_ADDRESS" Default="" Mode="" Description="Does not include port or protocol" Type="Variable" Display="always-hide" Required="true" Mask="false"/>
   <Config Name="Valkey Port" Target="CACHE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Valkey Password" Target="CACHE_PASSWORD" Default="" Mode="" Description="If Valkey was setup with --requirepass" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="CheckBag Data" Target="/home/appuser/CheckBag" Default="/mnt/user/appdata/CheckBag" Mode="rw" Description="Settings and user data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/CheckBag</Config>
   <Config Name="Cache ID Length" Target="CACHE_ID_LENGTH" Default="15" Mode="" Description="When an identifier is created (ex. JWT), how long the ID should be." Type="Variable" Display="advanced-hide" Required="true" Mask="false">15</Config>
   <Config Name="Service ID Length" Target="SERVICE_ID_LENGTH" Default="15" Mode="" Description="When a service is created, it's created with a random ID. This sets how long the ID is." Type="Variable" Display="advanced-hide" Required="true" Mask="false">15</Config>
   <Config Name="Log Color" Target="COLOR" Default="blue" Mode="" Description="Color used for outputting logs" Type="Variable" Display="advanced-hide" Required="true" Mask="false">blue</Config>
