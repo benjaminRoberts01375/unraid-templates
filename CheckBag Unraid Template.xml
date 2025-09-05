@@ -31,8 +31,6 @@
   <Config Name="Log Color" Target="COLOR" Default="blue" Mode="" Description="Color used for outputting logs" Type="Variable" Display="advanced-hide" Required="true" Mask="false">blue</Config>
   <Config Name="Role" Target="ROLE" Default="Backend" Mode="" Description="Text used to describe backend service" Type="Variable" Display="advanced-hide" Required="true" Mask="false">Backend</Config>
   <Config Name="Backend Internal Port" Target="PORT" Default="Backend" Mode="" Description="Port to launch backend service from" Type="Variable" Display="advanced-hide" Required="true" Mask="false">8080</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID for file permissions" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID for file permissions" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <TailscaleStateDir/>
   <Banner>https://github.com/benjaminRoberts01375/CheckBag/blob/main/art%20projects/CheckBag%20Banner.png?raw=true</Banner>
   <Screenshot>https://github.com/benjaminRoberts01375/CheckBag/blob/main/art%20projects/CheckBag.gif?raw=true</Screenshot>
