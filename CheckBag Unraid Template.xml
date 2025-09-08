@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/benjaminRoberts01375/CheckBag/blob/main/art%20projects/CheckBag%20Icon.png?raw=true</Icon>
-  <ExtraParams/>
+  <ExtraParams>--user 99:100</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1756922868</DateInstalled>
@@ -25,12 +25,12 @@
   <Config Name="Valkey IP" Target="CACHE_ADDRESS" Default="" Mode="" Description="Does not include port or protocol" Type="Variable" Display="always-hide" Required="true" Mask="false"></Config>
   <Config Name="Valkey Port" Target="CACHE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">6379</Config>
   <Config Name="Valkey Password" Target="CACHE_PASSWORD" Default="" Mode="" Description="If Valkey was setup with --requirepass" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
-  <Config Name="CheckBag Data" Target="/home/appuser/CheckBag" Default="/mnt/user/appdata/CheckBag" Mode="rw" Description="Settings and user data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/CheckBag</Config>
+  <Config Name="CheckBag Data" Target="/CheckBag" Default="/mnt/user/appdata/CheckBag" Mode="rw" Description="Settings and user data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/CheckBag</Config>
   <Config Name="Cache ID Length" Target="CACHE_ID_LENGTH" Default="15" Mode="" Description="When an identifier is created (ex. JWT), how long the ID should be." Type="Variable" Display="advanced-hide" Required="true" Mask="false">15</Config>
   <Config Name="Service ID Length" Target="SERVICE_ID_LENGTH" Default="15" Mode="" Description="When a service is created, it's created with a random ID. This sets how long the ID is." Type="Variable" Display="advanced-hide" Required="true" Mask="false">15</Config>
   <Config Name="Log Color" Target="COLOR" Default="blue" Mode="" Description="Color used for outputting logs" Type="Variable" Display="advanced-hide" Required="true" Mask="false">blue</Config>
   <Config Name="Role" Target="ROLE" Default="Backend" Mode="" Description="Text used to describe backend service" Type="Variable" Display="advanced-hide" Required="true" Mask="false">Backend</Config>
-  <Config Name="Backend Internal Port" Target="PORT" Default="Backend" Mode="" Description="Port to launch backend service from" Type="Variable" Display="advanced-hide" Required="true" Mask="false">8080</Config>
+  <Config Name="Backend Internal Port" Target="PORT" Default="8080" Mode="" Description="Port to launch backend service from" Type="Variable" Display="advanced-hide" Required="true" Mask="false">8080</Config>
   <TailscaleStateDir/>
   <Banner>https://github.com/benjaminRoberts01375/CheckBag/blob/main/art%20projects/CheckBag%20Banner.png?raw=true</Banner>
   <Screenshot>https://github.com/benjaminRoberts01375/CheckBag/blob/main/art%20projects/CheckBag.gif?raw=true</Screenshot>
